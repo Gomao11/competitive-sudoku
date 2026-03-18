@@ -58,7 +58,7 @@ io.on('connection', (socket) => {
   });
 });
 
-// ポート番号を確実に「数字」として読み込むように修正
+// ポート番号を確実に「数字」として読み込む
 const PORT = parseInt(process.env.PORT || '10000', 10);
 
 server.listen(PORT, '0.0.0.0', () => {
